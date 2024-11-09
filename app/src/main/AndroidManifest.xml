@@ -13,9 +13,6 @@
         android:theme="@style/Theme.KarsaNusa"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.DummyActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.activity.LoginActivity"
             android:exported="false" />
         <activity

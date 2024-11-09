@@ -9,47 +9,40 @@
     tools:context=".ui.fragment.HomeFragment">
 
     <TextView
-        android:id="@+id/tv_app_name"
+        android:id="@+id/home_welcome_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:text="@string/title_welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_welcome"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/title_welcome"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="@+id/tv_app_name"
-        app:layout_constraintStart_toStartOf="@+id/tv_app_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/carousel_recycler_view"
+        android:id="@+id/home_carousel_recycler_view"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_app_name"
-        app:layout_constraintStart_toStartOf="@+id/tv_app_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        app:layout_constraintEnd_toEndOf="@+id/home_welcome_text"
+        app:layout_constraintStart_toStartOf="@+id/home_welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/home_welcome_text"
         android:clipChildren="false"
         android:clipToPadding="false"/>
 
     <Button
-        android:id="@+id/button2"
-        style="@style/Widget.Material3.Button.TextButton"
+        android:id="@+id/home_button_show_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:text="@string/button_show_all"
-        app:layout_constraintEnd_toEndOf="@+id/carousel_recycler_view"
-        app:layout_constraintTop_toBottomOf="@+id/carousel_recycler_view" />
+        app:layout_constraintEnd_toEndOf="@+id/home_carousel_recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/home_carousel_recycler_view"
+        style="@style/Widget.Material3.Button.TextButton"/>
 
     <Button
         android:id="@+id/dummy_button_to_login"
@@ -59,6 +52,6 @@
         android:text="Pindah ke login activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/home_button_show_more" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

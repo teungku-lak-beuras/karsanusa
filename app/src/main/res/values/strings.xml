@@ -3,19 +3,29 @@
 
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
-
     <string name="title_welcome">Selamat datang, {user} di KarsaNusa</string>
+    <string name="title_community">Komunitas</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_home">Beranda</string>
 
     <string name="hint_username">Nama pengguna</string>
     <string name="hint_username_register">Nama pengguna yang ingin didaftarkan</string>
     <string name="hint_password">Kata sandi</string>
     <string name="hint_password_register">Kata sandi yang ingin didaftarkan</string>
+    <string name="hint_email">namapengguna@email.com</string>
+    <string name="hint_search">Ketik kata kunci</string>
+
+    <string name="content_description_item_carousel_image">Ini adalah gambar item carousel</string>
+    <string name="content_description_fragment_profile_image">Ini adalah foto profil</string>
 
     <string name="button_login">Masuk</string>
     <string name="button_login_alternate">Saya ingin masuk saja</string>
     <string name="button_register">Mendaftar</string>
     <string name="button_register_alternate">Saya ingin mendaftar saja</string>
     <string name="button_show_all">Tampilkan lebih</string>
+    <string name="button_account">Akun</string>
+    <string name="button_privacy">Privasi</string>
+    <string name="button_help">Bantuan</string>
 
     <integer-array name="carousel_images">
         <item>@drawable/a</item>

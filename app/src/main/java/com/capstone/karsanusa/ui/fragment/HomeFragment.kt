@@ -41,9 +41,9 @@ class HomeFragment : Fragment() {
 
         val layoutManager = CarouselLayoutManager(HeroCarouselStrategy())
         layoutManager.carouselAlignment = CarouselLayoutManager.ALIGNMENT_CENTER
-        binding.carouselRecyclerView.adapter = adapter
-        binding.carouselRecyclerView.layoutManager = layoutManager
-        CarouselSnapHelper().attachToRecyclerView(binding.carouselRecyclerView)
+        binding.homeCarouselRecyclerView.adapter = adapter
+        binding.homeCarouselRecyclerView.layoutManager = layoutManager
+        CarouselSnapHelper().attachToRecyclerView(binding.homeCarouselRecyclerView)
         adapter.submitList(list)
         // END OF DUMMY CODE
 
