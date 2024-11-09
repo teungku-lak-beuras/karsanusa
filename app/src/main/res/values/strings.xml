@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">KarsaNusa</string>
+
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+
+    <string name="title_welcome">Selamat datang, {user} di KarsaNusa</string>
+
+    <string name="hint_username">Nama pengguna</string>
+    <string name="hint_username_register">Nama pengguna yang ingin didaftarkan</string>
+    <string name="hint_password">Kata sandi</string>
+    <string name="hint_password_register">Kata sandi yang ingin didaftarkan</string>
+
+    <string name="button_login">Masuk</string>
+    <string name="button_login_alternate">Saya ingin masuk saja</string>
+    <string name="button_register">Mendaftar</string>
+    <string name="button_register_alternate">Saya ingin mendaftar saja</string>
+    <string name="button_show_all">Tampilkan lebih</string>
+
+    <integer-array name="carousel_images">
+        <item>@drawable/a</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+    </integer-array>
+</resources>
