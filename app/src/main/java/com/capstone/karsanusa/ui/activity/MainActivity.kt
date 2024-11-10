@@ -1,6 +1,7 @@
 package com.capstone.karsanusa.ui.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,5 +23,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
         binding.bottomNavigation.setupWithNavController(navController)
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            if (destination.id == R.id.fragment_result) {
+                binding.bottomNavigation.visibility = View.GONE
+            }
+            else {
+                binding.bottomNavigation.visibility = View.VISIBLE
+            }
+        }
     }
 }

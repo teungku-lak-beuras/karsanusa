@@ -26,6 +26,12 @@
     <string name="button_account">Akun</string>
     <string name="button_privacy">Privasi</string>
     <string name="button_help">Bantuan</string>
+    <string name="button_shopee">Shopee</string>
+    <string name="button_tokopedia">Tokopedia</string>
+
+    <string name="text_scan">Hasil jepretan</string>
+    <string name="text_result">Hasil deteksi</string>
+    <string name="text_description">Deskripsi</string>
 
     <integer-array name="carousel_images">
         <item>@drawable/a</item>

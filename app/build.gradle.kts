@@ -19,7 +19,10 @@
  *      id("androidx.navigation.safeargs")
  *
  * 6. android -> compileSdk 34 to 35 (Android 15)
+ *
  * 7. android -> defaultConfig -> targetSdk 34 to 35 (Android 15)
+ *
+ * 8. buildConfig false to true
  *
  * REASONING:
  *
@@ -66,6 +69,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
     buildTypes {
         release {

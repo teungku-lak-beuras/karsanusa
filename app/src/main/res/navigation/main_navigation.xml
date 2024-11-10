@@ -9,7 +9,11 @@
         android:id="@+id/fragment_home"
         android:name="com.capstone.karsanusa.ui.fragment.HomeFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragment_home_to_resultFragment"
+            app:destination="@id/fragment_result" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_community"
         android:name="com.capstone.karsanusa.ui.fragment.CommunityFragment"
@@ -20,4 +24,14 @@
         android:name="com.capstone.karsanusa.ui.fragment.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragment_result"
+        android:name="com.capstone.karsanusa.ui.fragment.ResultFragment"
+        android:label="Batik"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="scanImageUri"
+            app:argType="string"
+            android:defaultValue="none" />
+    </fragment>
 </navigation>
